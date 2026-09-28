@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Budget & Expense Tracker</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Personal Budget & Expense Tracker</h1>
+        <p>Track your budget, expenses, and spending habits.</p>
+    </header>
+
+    <main>
+
+        <section>
+            <h2>Budget Overview</h2>
+
+            <div>
+                <h3>Total Budget</h3>
+                <p>KES 0.00</p>
+            </div>
+
+            <div>
+                <h3>Total Spent</h3>
+                <p>KES 0.00</p>
+            </div>
+
+            <div>
+                <h3>Remaining</h3>
+                <p>KES 0.00</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Add Expense</h2>
+
+            <form>
+                <label for="expense">Expense Name</label>
+                <input type="text" id="expense" name="expense">
+
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" name="amount">
+
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                    <option value="food">Food</option>
+                    <option value="transport">Transport</option>
+                    <option value="shopping">Shopping</option>
+                    <option value="bills">Bills</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <button type="submit">Add Expense</button>
+            </form>
+        </section>
+
+        <section>
+            <h2>Recent Expenses</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Expense</th>
+                        <th>Category</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Lunch</td>
+                        <td>Food</td>
+                        <td>KES 500</td>
+                    </tr>
+
+                    <tr>
+                        <td>Matatu</td>
+                        <td>Transport</td>
+                        <td>KES 200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Personal Budget & Expense Tracker</p>
+    </footer>
+
+</body>
+</html>
